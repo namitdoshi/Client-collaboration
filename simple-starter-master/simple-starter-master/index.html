@@ -1,0 +1,211 @@
+<html>
+  <head>
+    <title>Client Collaboration app</title>
+
+    <!-- Normalize HTML5 Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+    <!-- styles.css Link -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Responsive Shizz -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+  </head>
+
+  <body>
+
+    <div id="sidebar">
+      <img src="images/menu.svg" alt="Menu Bar" class="menu">
+      <h1 class="title">Pixel Perfect Deign Resources</h1>
+      <div class="info">
+        <div class="client">
+          <p class="input">Jane Doe</p>
+          <p class="description">Client's Name</p>
+
+          <p class="input">xyz@example.com</p>
+          <p class="decription">Clients's Email</p>
+
+          <p class="input">123-456-7890</p>
+          <p class="description">Client's Phone</p>
+        </div>
+        <hr>
+        <div class="project">
+          <p class="input">$125000</p>
+          <p class="decription">Project Budget</p>
+
+          <p class="input">Jan 29'th</p>
+          <p class="description">Project Due Date</p>
+        </div>
+        <p class="view_more">View Full Project Briefs</p>
+      </div>
+    </div>
+    <div id= "chat">
+
+    <div class="bubble attachment">
+      <img src="images/image_icon.svg" class="icon">
+      <div class="preview">
+        <img src="images/pixel-perfect-design-resources.png" />
+      </div>
+      <div class="content">
+        <h2 class="title">Pixel Perfect Design Resources V1</h2>
+        <p class="description">Neutra literally flexitarian farm-to-table try-hard. Cliche tilde chia meh, cornhole fap try-hard tofu drinking vinegar jean shorts bitters. Tumblr keffiyeh intelligentsia, butcher XOXO kogi gentrify viral yuccie deep v roof party 3 wolf moon asymmetrical paleo organic.</p>
+        <div class="buttons_wrapper">
+          <a class="button button_blue"href="#">View Full Size</a>
+          <a class="button button_download"href="#">Download</a
+            >
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+<div class="bubble">
+  <div class="content">
+    <div class="avatar">
+      <img src="images/avatar.png" alt ="Avatar">
+
+    </div>
+    <p class="copy">
+      Hey Jane, you can see above I have attached a pdf of the first go at this design. Can you take a look and let me know what you think.
+    </p>
+</div>
+<p class="time">
+  2:54
+</p>
+
+</div>
+
+
+
+<div class="bubble Client">
+  <div class="content">
+    <div class="avatar">
+      <img src="images/avatar_client.png" alt ="Avatar">
+
+    </div>
+    <p class="copy">
+      Hi Mackenzie! This is looking great! Can I see it with a different color other than that yellow?
+    </p>
+</div>
+<p class="time">
+  2:54
+</p>
+
+</div>
+
+
+
+<div class="bubble">
+  <div class="content">
+    <div class="avatar">
+      <img src="images/avatar.png" alt ="Avatar">
+
+    </div>
+    <p class="copy">
+      Yes, absolutely! What do you think about a green color instead?
+    </p>
+</div>
+<p class="time">
+  2:54
+</p>
+
+</div>
+
+
+
+<div class="bubble attachment">
+  <img src="images/image_icon.svg" class="icon">
+  <div class="preview">
+    <img src="images/pixel-perfect-design-resources.png" />
+  </div>
+  <div class="content">
+    <h2 class="title">Pixel Perfect Design Resources V2</h2>
+    <p class="description">Neutra literally flexitarian farm-to-table try-hard. Cliche tilde chia meh, cornhole fap try-hard tofu drinking vinegar jean shorts bitters. Tumblr keffiyeh intelligentsia, butcher XOXO kogi gentrify viral yuccie deep v roof party 3 wolf moon asymmetrical paleo organic.</p>
+    <div class="buttons_wrapper">
+      <a class="button button_blue"href="#">View Full Size</a>
+      <a class="button button_download"href="#">Download</a
+        >
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+<div class="bubble">
+<div class="content">
+<div class="avatar">
+  <img src="images/avatar.png" alt ="Avatar">
+
+</div>
+<p class="copy">
+  Hey Jane, you can see above I have attached a pdf of the first go at this design. Can you take a look and let me know what you think.
+</p>
+</div>
+<p class="time">
+2:54
+</p>
+
+</div>
+
+
+
+<div class="bubble Client">
+<div class="content">
+<div class="avatar">
+  <img src="images/avatar_client.png" alt ="Avatar">
+
+</div>
+<p class="copy">
+  Hi Mackenzie! This is looking great! Can I see it with a different color other than that yellow?
+</p>
+</div>
+<p class="time">
+2:54
+</p>
+
+</div>
+
+
+
+<div class="bubble">
+<div class="content">
+<div class="avatar">
+  <img src="images/avatar.png" alt ="Avatar">
+
+</div>
+<p class="copy">
+  Yes, absolutely! What do you think about a green color instead?
+</p>
+</div>
+<p class="time">
+2:54
+</p>
+
+</div>
+<div id="input">
+  <div class="avatar">
+    <img src="images/avatar.png" alt ="Avatar">
+
+  </div>
+  <textarea name="comment" id="comment" placeholder="Say something"></textarea>
+</div>
+
+</div>
+    <!-- global.js Link -->
+  <!--  <script src="js/global.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#chat').scrollTop($('#chat')[0].scrollHeight);
+    });
+  </script>
+  </body>
+</html>

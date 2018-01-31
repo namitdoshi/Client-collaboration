@@ -1,0 +1,165 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+html, body {
+  font-family: Avenir-book;
+  background: #f7f8fb; }
+
+.button {
+  padding: 1em 1.5em;
+  border-radius: .35em;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .9em;
+  -webkit-transition: background .4s ease-in-out;
+  -o-transition: background .4s ease-in-out;
+  transition: background .4s ease-in-out; }
+
+.button_blue {
+  background: #50bbf2;
+  color: #ffffff; }
+  .button_blue:hover {
+    background: #0f8ccd; }
+
+.button_download {
+  background: #cedce4;
+  color: #ffffff; }
+  .button_download:hover {
+    background: #8cadc0; }
+
+#sidebar {
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  background: #f7f8fb;
+  width: 300px; }
+  #sidebar .title {
+    font-size: 2.25em;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #393f42;
+    margin: 3em 0; }
+  #sidebar .info .input {
+    font-size: 1.35em;
+    color: #727678;
+    margin-top: 1.25em 0 0 0; }
+  #sidebar .info .description {
+    font-size: .8em;
+    font-weight: 700;
+    coor: #393f42;
+    margin: 0; }
+  #sidebar .info hr {
+    width: 2em;
+    height: 0;
+    border-top: 2px solid #cedce4; }
+  #sidebar .info .view_more {
+    font-size: 0.8em;
+    color: #50bbf2;
+    font-weight: 700;
+    margin-top: 3em; }
+  #sidebar .info #chat {
+    widows: 1440px;
+    height: 100%;
+    margin: 0,auto;
+    padding: 0 150px 150px 500px;
+    overflow: scroll; }
+    #sidebar .info #chat::-webkit-scrollbar {
+      display: none; }
+    #sidebar .info #chat .avatar {
+      width: 40px;
+      width: 40px;
+      border-radius: 100%;
+      overflow: hidden;
+      float: left; }
+      #sidebar .info #chat .avatar img {
+        height: 100%; }
+    #sidebar .info #chat .bubble {
+      margin-bottom: 3em; }
+      #sidebar .info #chat .bubble .content {
+        background: #ffffff;
+        -webkit-box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.07);
+        box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.07);
+        border-radius: 25px 25px 25px 2px;
+        content: "";
+        display: table; }
+        #sidebar .info #chat .bubble .content::after {
+          clear: both;
+          display: inline-block; }
+          #sidebar .info #chat .bubble .content::after .copy {
+            font-size: 1.1em;
+            line-height: 1.75em;
+            color: #727678;
+            padding: 1.5em;
+            margin: 0; }
+            #sidebar .info #chat .bubble .content::after .copy .time {
+              font-weight: 700;
+              font-size: 0.8em;
+              clear: both;
+              color: #393f42; }
+              #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client {
+                float: right; }
+                #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .content {
+                  background: #fafbff;
+                  border-radius: 25px 25px 2px 25px;
+                  text-align: right;
+                  float: right; }
+                  #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .content .avatar {
+                    float: right; }
+                  #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .content .time {
+                    text-align: right; }
+                #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .bubble.attachment {
+                  width: 100%;
+                  position: relative;
+                  margin: 5em 0 2em;
+                  clear: both; }
+                #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .preview {
+                  width: 15em;
+                  border-radius: .5em;
+                  overflow: hidden;
+                  -webkit-box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.34);
+                  box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.34);
+                  position: absolute;
+                  left: 2em;
+                  bottom: 2em; }
+                  #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .preview img {
+                    width: 100%; }
+                #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .content {
+                  width: 100%;
+                  min-height: 22em;
+                  padding: 2em 5em 2em 20em; }
+                  #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .content .title {
+                    font-size: 1.5em;
+                    color: #393f42;
+                    font-weight: 400; }
+                  #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .content .description {
+                    font-size: 1.1em;
+                    color: #727678;
+                    line-height: 1.65; }
+                  #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .content .buttons_wrapper {
+                    margin-top: 3em; }
+                    #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .content .buttons_wrapper .button {
+                      margin-right: 1em; }
+                #sidebar .info #chat .bubble .content::after .copy .time .bubble.Client .icon {
+                  position: absolute;
+                  right: 2em;
+                  top: 2em; }
+              #sidebar .info #chat .bubble .content::after .copy .time #input {
+                width: 100%;
+                position: relative; }
+                #sidebar .info #chat .bubble .content::after .copy .time #input .avatar {
+                  position: absolute;
+                  left: 2em;
+                  top: 2em;
+                  margin: 0;
+                  background: #ffffff;
+                  -webkit-box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.07);
+                  box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.07);
+                  border-radius: 25px 25px 25px 2px;
+                  border: none;
+                  width: 100%;
+                  height: 10em;
+                  font-size: 1.1em;
+                  padding: 2.25em 2em 2em 5.5em; }

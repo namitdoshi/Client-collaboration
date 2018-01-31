@@ -1,0 +1,166 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+html, body {
+  font-family: Avenir-book;
+  background: #f7f8fb; }
+  html .button, body .button {
+    padding: 1em 1.5em;
+    border-radius: .35em;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9em;
+    -webkit-transition: background .4s ease-in-out;
+    -o-transition: background .4s ease-in-out;
+    transition: background .4s ease-in-out; }
+  html .button_blue, body .button_blue {
+    background: #50bbf2;
+    color: #ffffff;
+    background: #0f8ccd; }
+  html .button_download, body .button_download {
+    background: #cedce4;
+    color: #ffffff;
+    background: #8cadc0; }
+  html #sidebar, body #sidebar {
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    background: #f7f8fb;
+    width: 300px; }
+    html #sidebar .title, body #sidebar .title {
+      font-size: 2.25em;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #393f42;
+      margin: 3em 0; }
+    html #sidebar .info .input, body #sidebar .info .input {
+      font-size: 1.35em;
+      color: #727678;
+      margin-top: 1.25em; }
+    html #sidebar .info .description, body #sidebar .info .description {
+      font-size: .8em;
+      font-weight: 700;
+      color: #393f42;
+      margin: 0; }
+    html #sidebar .info hr, body #sidebar .info hr {
+      width: 2em;
+      height: 0;
+      border-top: 2px solid #cedce4;
+      margin: 3em 0; }
+    html #sidebar .info .view_more, body #sidebar .info .view_more {
+      font-size: 0.8em;
+      color: #50bbf2;
+      font-weight: 700;
+      margin-top: 3em; }
+  html #chat, body #chat {
+    width: 1440px;
+    height: 100%;
+    margin: 0,auto;
+    padding: 0 150px 150px 500px;
+    overflow: scroll; }
+    html #chat::-webkit-scrollbar, body #chat::-webkit-scrollbar {
+      display: none; }
+    html #chat .bubble, body #chat .bubble {
+      margin-bottom: 3em; }
+      html #chat .bubble .content, body #chat .bubble .content {
+        background: #ffffff;
+        -webkit-box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.07);
+        box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.07);
+        border-radius: 25px 25px 25px 2px;
+        content: "";
+        display: table; }
+        html #chat .bubble .content::after, body #chat .bubble .content::after {
+          clear: both;
+          display: inline-block; }
+        html #chat .bubble .content .avatar, body #chat .bubble .content .avatar {
+          width: 40px;
+          width: 70px;
+          border-radius: 100%;
+          overflow: hidden;
+          float: left; }
+          html #chat .bubble .content .avatar img, body #chat .bubble .content .avatar img {
+            height: 100%; }
+        html #chat .bubble .content .copy, body #chat .bubble .content .copy {
+          font-size: 1.1em;
+          line-height: 1.75em;
+          color: #727678;
+          padding: 1.5em;
+          margin: 0; }
+      html #chat .bubble .time, body #chat .bubble .time {
+        font-weight: 700;
+        font-size: 0.8em;
+        clear: both;
+        color: #393f42; }
+    html #chat .bubble.Client, body #chat .bubble.Client {
+      float: right; }
+      html #chat .bubble.Client .content, body #chat .bubble.Client .content {
+        background: #fafbff;
+        border-radius: 25px 25px 2px 25px;
+        text-align: right;
+        float: right; }
+        html #chat .bubble.Client .content .avatar, body #chat .bubble.Client .content .avatar {
+          float: right; }
+      html #chat .bubble.Client .time, body #chat .bubble.Client .time {
+        text-align: right; }
+    html #chat .bubble.attachment, body #chat .bubble.attachment {
+      width: 100%;
+      position: relative;
+      margin: 5em 0 2em;
+      clear: both; }
+      html #chat .bubble.attachment .preview, body #chat .bubble.attachment .preview {
+        width: 15em;
+        border-radius: .5em;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.34);
+        box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.34);
+        position: absolute;
+        left: 2em;
+        bottom: 2em; }
+        html #chat .bubble.attachment .preview img, body #chat .bubble.attachment .preview img {
+          width: 100%; }
+      html #chat .bubble.attachment .content, body #chat .bubble.attachment .content {
+        width: 100%;
+        min-height: 22em;
+        padding: 2em 5em 2em 20em; }
+        html #chat .bubble.attachment .content .title, body #chat .bubble.attachment .content .title {
+          font-size: 1.5em;
+          color: #393f42;
+          font-weight: 400; }
+        html #chat .bubble.attachment .content .description, body #chat .bubble.attachment .content .description {
+          font-size: 1.1em;
+          color: #727678;
+          line-height: 1.65; }
+        html #chat .bubble.attachment .content .buttons_wrapper, body #chat .bubble.attachment .content .buttons_wrapper {
+          margin-top: 3em; }
+          html #chat .bubble.attachment .content .buttons_wrapper .button, body #chat .bubble.attachment .content .buttons_wrapper .button {
+            margin-right: 1em; }
+      html #chat .bubble.attachment .icon, body #chat .bubble.attachment .icon {
+        position: absolute;
+        right: 2em;
+        top: 2em; }
+    html #chat #input, body #chat #input {
+      width: 100%;
+      position: relative; }
+      html #chat #input .avatar, body #chat #input .avatar {
+        position: absolute;
+        left: 2em;
+        top: 2em;
+        margin: 0;
+        width: 40px;
+        width: 70px;
+        border-radius: 100%;
+        overflow: hidden;
+        float: left; }
+      html #chat #input textarea, body #chat #input textarea {
+        background: #ffffff;
+        -webkit-box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.07);
+        box-shadow: 0px 9px 30px 0px rgba(44, 55, 79, 0.07);
+        border-radius: 25px 25px 25px 2px;
+        border: none;
+        width: 100%;
+        height: 10em;
+        font-size: 1.1em;
+        padding: 2.25em 2em 2em 5.5em; }
